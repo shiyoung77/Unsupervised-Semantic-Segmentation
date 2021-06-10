@@ -13,7 +13,7 @@ backbone: 'resnet50'
 backbone_kwargs:
    dilated: True
 head: 'deeplab'
-pretraining: /path/to/checkpoint.pth.tar # Change this.
+pretraining: /home/lsy/software/ssl_object_identification/MaskContrast/checkpoints/VOCSegmentation_supervised_saliency_modelpth.tar # Change this.
 
 # Optimizer
 epochs: 60
