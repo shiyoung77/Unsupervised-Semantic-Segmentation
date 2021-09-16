@@ -14,7 +14,7 @@ backbone: resnet50
 backbone_kwargs:
    dilated: True
    pretraining: imagenet_moco 
-   moco_state_dict: /path/to/moco_v2_800ep_pretrain.pth.tar # see MoCo repo
+   moco_state_dict: /home/lsy/software/MaskContrast/checkpoints/moco_v2_800ep_pretrain.pth.tar # see MoCo repo
 model_kwargs:
    ndim: 32
    head: linear

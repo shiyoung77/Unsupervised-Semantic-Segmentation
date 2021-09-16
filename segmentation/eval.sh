@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PATH_TO_MODEL="/home/lsy/software/ssl_object_identification/MaskContrast/checkpoints/linear_finetune_VOCSegmentation_supervised_saliency.pth.tar"
+PATH_TO_MODEL="/home/lsy/software/MaskContrast/checkpoints/linear_finetune_VOCSegmentation_supervised_saliency.pth.tar"
 
 python eval.py \
     --config_env configs/env.yml \

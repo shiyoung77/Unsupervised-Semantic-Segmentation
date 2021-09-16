@@ -90,7 +90,7 @@ def main_worker(gpu, ngpus_per_node, args):
                     world_size=args.world_size, rank=args.rank)
 
     print('Python script is {}'.format(os.path.abspath(__file__)))
-    print(colored(p, 'red'))
+    print(colored(p, 'cyan'))
 
     # Get model
     print(colored('Retrieve model', 'blue'))
@@ -110,6 +110,7 @@ def main_worker(gpu, ngpus_per_node, args):
         model, optimizer = amp.initialize(model, optimizer, opt_level="O2",
                                             keep_batchnorm_fp32=True, loss_scale="dynamic")
     else:
+        print(colored('Not using mixed precision training', 'blue'))
         amp = None
     
     # When using a single GPU per process and per

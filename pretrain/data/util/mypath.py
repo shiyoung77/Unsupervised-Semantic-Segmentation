@@ -8,7 +8,7 @@ import os
 class Path(object):
     @staticmethod
     def db_root_dir(database=''):
-        db_root = '/mnt/evo/dataset/pascal_voc/' # VOC will be automatically downloaded
+        db_root = '/home/lsy/dataset/PASCAL_VOC/' # VOC will be automatically downloaded
         db_names = ['VOCSegmentation']
 
         if database == '':
